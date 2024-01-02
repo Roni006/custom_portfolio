@@ -5,10 +5,13 @@
     #mobile-menu-btn{
         display: inline-block;
     }
+    
 }
+
 
 @media(max-width: 470px){
     .nav-menu .social-icons i{
         display: none;
     }
+   
 }

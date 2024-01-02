@@ -18,12 +18,16 @@ Version: 1.0.0
     --nav-logo: #2B29A7;
     --nav-menu: #666;
     --hover-color: #FF6666;
+    --hero-bg: #D9D9D9;
+    --skill-shadow:14px 9px 64px -22px rgba(24,21,21,0.75);
+   
 }
 
 body{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    margin-bottom: 500px;
 }
 /* basic set up */
 
@@ -54,6 +58,13 @@ h1,h2,h3,h4,h5,h6{
     max-width: 1360px;
     margin: 0 auto;
 }
+img{
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+
 
 /* HEADER SECTION START */
 .nav-section{
@@ -62,7 +73,7 @@ h1,h2,h3,h4,h5,h6{
 .nav-row {
     display: flex;
     justify-content: space-between;
-    box-shadow: var(--box-shadow);
+    /* box-shadow: var(--box-shadow); */
     align-items: center;
     padding: 15px 51px 15px 51px;
 }
@@ -83,6 +94,7 @@ h1,h2,h3,h4,h5,h6{
     font-weight: 500;
     color: var(--nav-menu);
     transition: 0.3s;
+    align-items: center;
 }
 .nav-menu nav ul li a:hover{
     color: var(--hover-color);
@@ -121,3 +133,123 @@ h1,h2,h3,h4,h5,h6{
     display: none;
 }
 /* HEADER SECTION END */
+
+
+/* HERO SECTION START */
+.hero-section{
+    background-color: var(--hero-bg);
+    padding: 100px;
+    overflow: hidden;
+}
+.hero-content{
+    display: flex;
+    gap: 155px;
+}
+.hero-left{
+    flex-shrink: 0;
+    width: 50%;
+}
+.hero-right{
+    width: 50%;
+}
+.hero-right img {
+    position: absolute;
+    margin-top: -193px;
+    width: 345px;
+    
+    max-width: initial;
+}
+.hero-left .first{
+    font-size: 32px;
+    font-family: var(--Space-Grotesk);
+    margin-top: 18px;
+}
+.hero-left .second{
+    font-size: 55px;
+    /* width: 467px; */
+    font-weight: 700;
+    font-family: var(--Noto-Sans);
+    color: var(--nav-logo);
+    margin-left: 15px;
+    
+    
+}
+.hero-left p{
+    font-size: 26px;
+    font-family: var(--Space-Grotesk);
+    color: var(--black);
+}
+.hero-left a{
+    text-decoration: none;
+    font-size: 16px;
+    font-family: var(--Space-Grotesk);
+    color: var(--black);
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+.text{
+    display: flex;
+}
+.devider-1{
+    width: 68px;
+    height: 3.76px;
+    background-color: var(--nav-logo);
+    display: block;
+    margin-bottom: 35px;
+}
+.devider-2{
+    width: 120px;
+    height: 2px;
+    background-color: var(--nav-logo);
+    display: block;
+    margin-top: 10px;
+}
+/* HERO SECTION END */
+
+
+/* ABOUR SECTION START */
+.about-section{
+
+}
+.about-content h3{
+    font-family: var(--Crimson);
+    color: var(--nav-logo);
+    margin-left: 55px;
+    margin-top: 97px;
+}
+.about-content p {
+    color: var(--black);
+    font-family: var(--Crimson);
+    margin: 20px 75px 95px 145px;
+    width: 1063px;
+    font-size: 25px;
+    line-height: 95%;
+}
+.about-section .skills h3{
+    font-family: var(--Crimson);
+    color: var(--nav-logo);
+    font-weight: 700;
+    text-align: center;
+}
+.skills-block {
+    background-color: #d2cfcfde;
+    width: 20%;
+    padding: 15px 25px;
+    text-align: center;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+.skills-block h5{
+    margin-top: 15px;
+}
+.skills-block:hover{
+    box-shadow: var(--skill-shadow);
+}
+.about-section .skill-section{
+    display: flex;
+    gap: 50px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 50px;
+}
+/* ABOUT SECTION END */
