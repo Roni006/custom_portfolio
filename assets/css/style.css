@@ -20,6 +20,8 @@ Version: 1.0.0
     --hover-color: #FF6666;
     --hero-bg: #D9D9D9;
     --skill-shadow:14px 9px 64px -22px rgba(24,21,21,0.75);
+    --light-gray: #666666;
+    --box-shadow-2: -1px 5px 37px -9px rgba(24,18,18,0.75);
    
 }
 
@@ -253,3 +255,82 @@ img{
     margin-top: 50px;
 }
 /* ABOUT SECTION END */
+
+
+/* PROJECT SECTION START */
+.project-section{
+
+}
+.project-block{
+    text-align: center;
+    margin-top: 150px;
+}
+.project-block h3{
+    color: var(--nav-logo);
+    font-family: var(--Crimson);
+    font-weight: 700;
+}
+.project-block p{
+    font-size: 25px;
+    font-family: var(--Poppins);
+    color: var(--black);
+}
+.project-row{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    /* width: 33.33%; */
+    /* width: calc(100% - 30px); */
+    justify-content: center;
+    margin-top: 40px;
+    
+}
+.project-content{
+    /* width: 25%; */
+    margin-bottom: 30px;
+    transition: 0.5s;
+}
+.project-content:hover{
+    box-shadow: var(--box-shadow-2);
+}
+.project-blocks{
+    /* background-color: var(--white); */
+    box-shadow: var(--box-shadow);
+    width: 373px;
+    padding: 24px 45px 25px 28px;
+    border-radius: 0 0 20px 20px;
+}
+.project-blocks h6{
+    font-family: var(--Poppins);
+    font-weight: 500;
+    /* margin-top: 24px; */
+}
+.project-blocks .p-details{
+    font-size: 18px;
+    font-family: var(--Poppins);
+    color: var(--light-gray);
+    margin-top: 15px;
+    width: 315px;
+}
+.project-blocks .full{
+    color: var(--light-gray);
+    font-size: 15px;
+}
+.project-blocks .bold{
+    font-weight: 500;
+    
+}
+.project-blocks .live{
+    color: var(--black);
+    margin-right: 25px;
+    margin-left: 5px;
+    font-size: 16px;
+    font-family: var(--Poppins);
+}
+.project-blocks .view{
+    color: var(--black);
+    margin-left: 5px;
+    font-size: 16px;
+    font-family: var(--Poppins);
+}
+/* PROJECT SECTION END */
