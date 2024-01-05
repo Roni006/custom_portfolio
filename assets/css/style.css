@@ -29,7 +29,7 @@ body{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    margin-bottom: 500px;
+    /* margin-bottom: 500px; */
 }
 /* basic set up */
 
@@ -156,9 +156,9 @@ img{
 }
 .hero-right img {
     position: absolute;
-    margin-top: -193px;
-    width: 345px;
-    
+    margin-top: -152px;
+    width: 316px;
+    display: block;
     max-width: initial;
 }
 .hero-left .first{
@@ -334,3 +334,94 @@ img{
     font-family: var(--Poppins);
 }
 /* PROJECT SECTION END */
+
+
+
+/* CONTACT SECTION START */
+.contact-section{
+    margin-top: 80px;
+    background-color: var(--hero-bg);
+    padding-top: 10px ;
+    padding-bottom: 50px;
+}
+.contact-content h2{
+    color: var(--nav-logo);
+    font-weight: 700;
+    font-family: var(--Crimson);
+    text-align: center;
+}
+.contact-row{
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    margin-top: 30px;
+    align-items: center;
+}
+.contact-block{
+    background-color: var(--nav-logo);
+    width: 290px;
+    display: inline-flex;
+    align-items: center;
+    padding: 9px 15px 12px 15px;
+    border-radius: 10px;
+}
+.contact-block a{
+    color: var(--white);
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 18px;
+    margin-left: 10px;
+    font-family: var(--Crimson);
+
+    
+}
+.contact-block span{
+    height: 50px;
+    width: 50px;
+}
+.bottom-brk{
+    background-color: var(--nav-logo);
+    width: 1170px;
+    height: 7px;
+    display: inline-block;
+    margin-left: 50px;
+    position: absolute;
+     margin-top: 43px;
+
+}
+/* CONTACT SECTION END */
+
+/* FOOTER SECTION START */
+.footer-section{
+    margin: 60px 30px;
+}
+.footer-items  {
+    text-align: center;
+    
+}
+.footer-items ul{
+    display: inline-block;
+}
+.footer-items ul li{
+    list-style:none;
+}
+.footer-items ul li a{
+    text-decoration: none;
+    color: var(--light-gray);
+    font-size: 20px;
+    font-family: var(--DM-Sans);
+    margin-left: 25px;
+    font-weight: 500;
+    transition: 0.3s;
+}
+.footer-items ul li a:hover{
+    color: var(--hover-color);
+}
+.footer-items p{
+    font-size: 15px;
+    color: var(--light-gray);
+    font-family: var(--DM-Sans);
+    margin-left: 40px;
+    font-weight: 500;
+}
+/* FOOTER SECTION END */
