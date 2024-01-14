@@ -22,7 +22,6 @@ Version: 1.0.0
     --skill-shadow:14px 9px 64px -22px rgba(24,21,21,0.75);
     --light-gray: #666666;
     --box-shadow-2: -1px 5px 37px -9px rgba(24,18,18,0.75);
-   
 }
 
 body{
@@ -206,18 +205,35 @@ img{
     display: block;
     margin-top: 10px;
 }
+.hero-btn{
+    margin-top: 30px;
+    background-color: #2B29A7;
+    display: inline-block;
+    padding: 15px 25px 15px 25px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.hero-btn a{
+    color: var(--white);
+    width: 500;
+}
+.hero-btn:hover{
+    box-shadow: var(--box-shadow-2);
+}
 /* HERO SECTION END */
 
 
 /* ABOUR SECTION START */
 .about-section{
-
+    margin-top: 97px;
+    margin-left: 55px;
 }
 .about-content h3{
     font-family: var(--Crimson);
     color: var(--nav-logo);
-    margin-left: 55px;
-    margin-top: 97px;
+    
+    
 }
 .about-content p {
     color: var(--black);
@@ -259,11 +275,11 @@ img{
 
 /* PROJECT SECTION START */
 .project-section{
-
+    margin-top: 120px;
 }
 .project-block{
     text-align: center;
-    margin-top: 150px;
+    
 }
 .project-block h3{
     color: var(--nav-logo);
