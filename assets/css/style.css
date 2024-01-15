@@ -155,9 +155,9 @@ img{
 }
 .hero-right img {
     position: absolute;
-    margin-top: -152px;
-    width: 316px;
-    display: block;
+    margin-top: -125px;
+    width: 356px;
+    display: inline-block;
     max-width: initial;
 }
 .hero-left .first{
